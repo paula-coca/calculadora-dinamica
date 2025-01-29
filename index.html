@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href="./src/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h3 style="text-align: center;">Calculadora Dinámica</h3>
+
+        <div class="fields">
+            <input id="num1" type="text" placeholder="Escribe un número">
+            <input id="num2" type="text" placeholder="Escribe otro número">
+
+            <div class="buttons">
+                <button class="button" id="sumar" onClick="elegirOperacion('sumar')">+</button>
+                <button class="button" id="restar" onClick="elegirOperacion('restar')">-</button>
+                <button class="button" id="multiplicar" onClick="elegirOperacion('multiplicar')">*</button>
+                <button class="button" id="dividir" onClick="elegirOperacion('dividir')">/</button>
+            </div>
+
+            <button onClick="calcular()">Calcular</button>
+            <p id="result"></p>
+        </div>
+    </div>
+
+    <script src="./src/js/calculadora.js"></script>
+</body>
+</html>
