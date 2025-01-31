@@ -55,9 +55,16 @@ function elegirOperacion(id) {
     button.style.backgroundColor = "gray";*/
     
     let activo = document.querySelector('.activo');
-    if (activo) {
+
+    if (activo && activo.id === id) {
         activo.classList.remove('activo');
+        operacionElegida = ""; // Se deselecciona la operación
+    } else {
+        if (activo) {
+            activo.classList.remove('activo');
+        }
     }
+    
     button.classList.add('activo');
-    operacionElegida = id;
+    operacionElegida = id; // Guardar la operación seleccionada
 }
