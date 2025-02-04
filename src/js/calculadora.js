@@ -56,13 +56,8 @@ function elegirOperacion(id) {
     
     let activo = document.querySelector('.activo');
 
-    if (activo && activo.id === id) {
+    if (activo) {
         activo.classList.remove('activo');
-        operacionElegida = ""; // Se deselecciona la operación
-    } else {
-        if (activo) {
-            activo.classList.remove('activo');
-        }
     }
     
     button.classList.add('activo');
